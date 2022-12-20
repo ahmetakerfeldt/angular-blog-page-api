@@ -65,7 +65,7 @@ export const DataBaseService = new class {
     }
 
     async sync() {
-        return this.sequelize.sync({force: false, alter: false})
+        return this.sequelize.sync({force: true, alter: true})
     }
 
     async authenticate() {
